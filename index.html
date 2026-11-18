@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdullah | Frontend Developer &amp; Graphic Designer</title>
+  <meta name="description" content="Portfolio of Abdullah, a graphic designer learning frontend development. Brand identity, web design and HTML/CSS projects.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#top">ABDULLAH</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container" id="top">
+      <div class="hero__content">
+        <p class="tag">Frontend Developer &amp; Graphic Designer</p>
+        <h1 class="hero__title">I design brands <span>and build websites.</span></h1>
+        <p class="hero__text">I'm a graphic designer learning frontend development. I turn brand and layout ideas into clean, responsive websites built with HTML and CSS.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">View Work</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <figure class="window window--glow">
+          <div class="window__bar"><span>abdullah / portrait</span></div>
+          <!-- Replace this placeholder with: <img src="portrait.jpg" alt="Portrait of Abdullah"> -->
+          <div class="portrait__canvas" role="img" aria-label="Portrait placeholder"> <img src="Untitled-1.png" alt=""> </div>
+        </figure>
+        <ul class="floaters" aria-hidden="true">
+          <li class="floater floater--html">HTML</li>
+          <li class="floater floater--css">CSS</li>
+          <li class="floater floater--branding">Branding</li>
+          <li class="floater floater--frontend">Frontend</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__label">about</p>
+        <div class="about">
+          <h2 class="section__title">Design first. <span>Code second. Getting better at both.</span></h2>
+          <div class="about__copy">
+            <p>My background is graphic design: layout, typography and brand identity. I'm now learning frontend development so I can build what I design, one HTML and CSS project at a time.</p>
+            <p>This portfolio is my first professional website, built from scratch to show both sides of my work.</p>
+            <div class="window notes">
+              <div class="window__bar"><span>design notes</span></div>
+              <div class="notes__body">
+                <p class="notes__type">Aa<small>Space Grotesk and Inter</small></p>
+                 <ul class="swatches" aria-hidden="true"><li></li><li></li><li></li><li></li><li></li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="grid grid--3 expertise">
+          <li class="card card--accent">
+            <h3>Visual Design</h3>
+            <p>Composition, hierarchy and typography that guide the eye.</p>
+          </li>
+          <li class="card card--accent">
+            <h3>Branding</h3>
+            <p>Logos, colour and type systems that stay consistent everywhere.</p>
+          </li>
+          <li class="card card--accent">
+            <h3>Frontend Development</h3>
+            <p>Semantic HTML and responsive CSS, still growing with every project.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section__label">skills</p>
+        <h2 class="section__title">Two crafts. <span>One workflow.</span></h2>
+
+        <div class="skill-group">
+          <div class="skill-group__head">
+            <h3>Frontend</h3>
+            <p>How I build the layout.</p>
+          </div>
+          <ul class="grid grid--3">
+            <li class="card skill skill--code"><span class="tag">Structure</span><div><h4>HTML</h4><p>Semantic markup.</p></div></li>
+            <li class="card skill skill--code"><span class="tag">Layout</span><div><h4>CSS</h4><p>Flexbox, grid and spacing.</p></div></li>
+            <li class="card skill skill--code"><span class="tag">Adaptive</span><div><h4>Responsive Design</h4><p>Phone to desktop.</p></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group__head">
+            <h3>Design</h3>
+            <p>How I shape the visuals.</p>
+          </div>
+          <ul class="grid grid--3">
+            <li class="card skill skill--design"><span class="tag">Raster</span><div><h4>Photoshop</h4><p>Image editing and composition.</p></div></li>
+            <li class="card skill skill--design"><span class="tag">Vector</span><div><h4>Illustrator</h4><p>Logos, icons and layouts.</p></div></li>
+            <li class="card skill skill--design"><span class="tag">Identity</span><div><h4>Brand Identity</h4><p>Logo, colour and type rules.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section__label">featured projects</p>
+        <h2 class="section__title">Selected work. <span>Case studies in progress.</span></h2>
+
+        <ul class="projects">
+          <li>
+            <article class="card project project--featured">
+              <div class="portfolio"  >
+                <img src="portfolio.png" alt="">
+              </div>
+             
+              <div class="project__body">
+                <div>
+                  <p class="project__num">01</p>
+                  <h3>Brand Identity</h3>
+                </div>
+                <div>
+                  <p>A personal brand system: monogram, colour palette, type pairing and stationery, designed to work from a favicon to a business card.</p>
+                  <ul class="tags"><li class="tag">Illustrator</li><li class="tag">Photoshop</li><li class="tag">Branding</li></ul>
+                </div>
+                <a class="link" href="#projects">View case study</a>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="card project">
+              <div class="respon"   >
+                <img src="responsiveD.png" alt="">
+              </div>
+             
+              <div class="project__body">
+                <p class="project__num">02</p>
+                <h3>Portfolio Website</h3>
+                <p>This portfolio, designed in Figma and built with HTML and CSS: editorial type, a strict grid  that adapt from desk to phone.</p>
+                <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">Responsive</li></ul>
+                <a class="link" href="#projects">View case study</a>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="card project">
+              <div class="respon"   >
+                <img src="responsivep.png" alt="">
+              </div>
+              
+              <div class="project__body">
+                <p class="project__num">03</p>
+                <h3>Modern Landing Page</h3>
+                <p>A conversion-focused landing page concept with a clear message, strong hierarchy and a single call to action, built mobile-first.</p>
+                <ul class="tags"><li class="tag">UI Design</li><li class="tag">HTML</li><li class="tag">CSS</li></ul>
+                <a class="link" href="#projects">View case study</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section__label">contact</p>
+        <h2 class="contact__title">Let's Build Something <span>Great Together.</span></h2>
+
+        <div class="window contact__form">
+          <div class="window__bar"><span>new message</span></div>
+          <form class="form" action="#" method="post">
+            <label class="field">Name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label class="field">Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="field field--full">Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="wordmark" aria-hidden="true">ABDULLAH</p>
+      <div class="site-footer__meta">
+        <span>ABDULLAH</span>
+        <span>Frontend Developer &amp; Graphic Designer</span>
+        <span>&copy; 2026</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
