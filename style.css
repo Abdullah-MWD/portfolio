@@ -1,31 +1,3 @@
-/* ==========================================================================
-   Abdullah | Portfolio
-   1. Tokens   2. Base   3. Layout   4. Components   5. Sections
-   6. Project previews   7. Motion   8. Breakpoints (768 / 1024 / 1440)
-   Mobile first: base styles are for small screens.
-   ========================================================================== */
-
-/* ==========================================================================
-   TYPOGRAPHY GUIDE
-   Every font size in this file is a fixed pixel (px) value.
-   Big headings get smaller on small screens so they never overflow, so the
-   same element has one size per screen width (set in the section 8 breakpoints).
-
-   Element                      Mobile     768px+     1024px+
-   Hero Title                   52px       72px       96px
-   Section Heading              36px       48px       64px
-   Contact Heading              48px       72px       96px
-   Project Title                28px       32px       40px
-   Skill Group Heading          28px       32px       40px
-   Footer Wordmark              56px       120px      160px (192px at 1440px+)
-
-   Same on every screen:
-   Skill / Card Title 24px  |  Body Text 16px  |  Form Inputs 20px
-   Navigation, Buttons, Card Text, Links 15px  |  Small Labels 14px
-   Tags and Floating Labels 13px  |  Window Bar Label 12px
-   ========================================================================== */
-
-/* 1. Tokens ---------------------------------------------------------------- */
 :root {
   --bg: #050505;
   --surface: #101010;
@@ -470,7 +442,7 @@ h1, h2, h3, h4 {
   line-height: .92;
   letter-spacing: -.07em;
 }
-.contact__form { max-width: 980px; margin-top: var(--s-8); }
+.contact__form { max-width: 980px; margin-top: var(--s-8); margin-left: auto; margin-right: auto; }
 .form { display: grid; gap: var(--s-4); padding: var(--s-3); }
 .field {
   display: grid;
@@ -498,17 +470,29 @@ h1, h2, h3, h4 {
 .form .btn { justify-self: start; }
 
 /* Footer */
-.site-footer { padding-top: var(--s-6); border-top: 1px solid #1A1A1A; }
+.site-footer { padding-top: var(--s-6); border-top: 1px solid #1A1A1A; text-align: center; }
 .wordmark {
   height: .66em;
-  overflow: hidden;
+  /* overflow: hidden; */
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 60px;
   /* Footer Wordmark: 56px on mobile (120px tablet, 160px desktop, 192px large desktop) */
   font: 600 56px/.9 var(--font-head);
-  letter-spacing: -.06em;
+  letter-spacing: 0em;
   white-space: nowrap;
+  
   color: transparent;
-  -webkit-text-stroke: 1px var(--border);
+-webkit-text-stroke: 1px var(--accent);
+
+text-shadow:
+  0 0 10px rgba(139,92,246,.5),
+  0 0 25px rgba(139,92,246,.35),
+  0 0 50px rgba(139,92,246,.15);
 }
+
+
+
 .site-footer__meta {
   display: flex;
   flex-direction: column;
@@ -518,6 +502,7 @@ h1, h2, h3, h4 {
   font-size: 14px;
   color: var(--muted);
 }
+
 
 
 /* 7. Motion ---------------------------------------------------------------- */
